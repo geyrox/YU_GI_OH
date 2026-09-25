@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+    <!-- Preconnect & dns-prefetch servers that get queried by the client -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://s3.duellinksmeta.com">
+    <link rel="preconnect" href="https://imgserv.duellinksmeta.com">
+
+    <!-- Icons -->
+    <link rel="manifest" href="https://www.duellinksmeta.com/manifest_22_01_2022.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://s3.duellinksmeta.com/img/icons/apple-touch-icon.jpg">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://s3.duellinksmeta.com/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://s3.duellinksmeta.com/img/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="https://s3.duellinksmeta.com/img/icons/safari-pinned-tab.svg" color="#001b35">
+    <link rel="shortcut icon" href="https://s3.duellinksmeta.com/img/icons/favicon.ico">
+
+    <!-- Font https://csswizardry.com/2020/05/the-fastest-google-fonts/ -->
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap"
+        media="print" onload="this.media='all'" />
+
+    <meta name="apple-mobile-web-app-title" content="Duel Links Meta">
+    <meta name="application-name" content="Duel Links Meta">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    <meta name="theme-color" content="#001427">
+
+    <title>Yu-Gi-Oh! Duel Links Meta</title><script async src="https://www.googletagmanager.com/gtag/js?id=G-PQ178ZYHYY" data-svelte="svelte-10mudjm"></script><meta name="robots" content="index,follow" data-svelte="svelte-ezjad3"><meta name="googlebot" content="index,follow" data-svelte="svelte-ezjad3"><meta name="description" content="Duel Links Meta has the best, most competitive information about the game. We post news, leaks, decks, tier lists, tournaments, guides, reviews and event reports!" data-svelte="svelte-ezjad3"><meta property="og:site_name" content="Yu-Gi-Oh! Duel Links Meta" data-svelte="svelte-ezjad3">
+
+        <meta property="og:title" content="Yu-Gi-Oh! Duel Links Meta" data-svelte="svelte-ezjad3">
+
+        <meta property="og:description" content="Duel Links Meta has the best, most competitive information about the game. We post news, leaks, decks, tier lists, tournaments, guides, reviews and event reports!" data-svelte="svelte-ezjad3">
+
+        <meta property="og:url" content="https://www.duellinksmeta.com/" data-svelte="svelte-ezjad3">
+
+        <meta property="og:type" content="website" data-svelte="svelte-ezjad3">
+
+        
+
+        <meta property="og:image" content="/_app/immutable/assets/dlm-square-8a563b51.webp" data-svelte="svelte-ezjad3">
+                <meta property="og:image:alt" content="Duel Links Meta Logo Square" data-svelte="svelte-ezjad3">
+                
+                
+
+        <meta name="twitter:card" content="summary" data-svelte="svelte-ezjad3">
+        <meta name="twitter:site" content="@DuelLinksMeta" data-svelte="svelte-ezjad3">
+        <meta name="twitter:title" content="Yu-Gi-Oh! Duel Links Meta" data-svelte="svelte-ezjad3">
+        <meta name="twitter:description" content="Duel Links Meta has the best, most competitive information about the game. We post news, leaks, decks, tier lists, tournaments, guides, reviews and event reports!" data-svelte="svelte-ezjad3">
+        <meta name="twitter:image" content="/_app/immutable/assets/dlm-square-8a563b51.webp" data-svelte="svelte-ezjad3">
+        <meta name="twitter:image:alt" content="Duel Links Meta Logo" data-svelte="svelte-ezjad3">
+	<style>.tippy-box[data-animation=fade][data-state=hidden]{opacity:0}[data-tippy-root]{max-width:calc(100vw - 10px)}.tippy-box{position:relative;background-color:#333;color:#fff;border-radius:4px;font-size:14px;line-height:1.4;white-space:normal;outline:0;transition-property:transform,visibility,opacity}.tippy-box[data-placement^=top]>.tippy-arrow{bottom:0}.tippy-box[data-placement^=top]>.tippy-arrow:before{bottom:-7px;left:0;border-width:8px 8px 0;border-top-color:initial;transform-origin:center top}.tippy-box[data-placement^=bottom]>.tippy-arrow{top:0}.tippy-box[data-placement^=bottom]>.tippy-arrow:before{top:-7px;left:0;border-width:0 8px 8px;border-bottom-color:initial;transform-origin:center bottom}.tippy-box[data-placement^=left]>.tippy-arrow{right:0}.tippy-box[data-placement^=left]>.tippy-arrow:before{border-width:8px 0 8px 8px;border-left-color:initial;right:-7px;transform-origin:center left}.tippy-box[data-placement^=right]>.tippy-arrow{left:0}.tippy-box[data-placement^=right]>.tippy-arrow:before{left:-7px;border-width:8px 8px 8px 0;border-right-color:initial;transform-origin:center right}.tippy-box[data-inertia][data-state=visible]{transition-timing-function:cubic-bezier(.54,1.5,.38,1.11)}.tippy-arrow{width:16px;height:16px;color:#333}.tippy-arrow:before{content:"";position:absolute;border-color:transparent;border-style:solid}.tippy-content{position:relative;padding:5px 9px;z-index:1}.tippy-box[data-animation=shift-away-subtle][data-state=hidden]{opacity:0}.tippy-box[data-animation=shift-away-subtle][data-state=hidden][data-placement^=top]{transform:translateY(5px)}.tippy-box[data-animation=shift-away-subtle][data-state=hidden][data-placement^=bottom]{transform:translateY(-5px)}.tippy-box[data-animation=shift-away-subtle][data-state=hidden][data-placement^=left]{transform:translate(5px)}.tippy-box[data-animation=shift-away-subtle][data-state=hidden][data-placement^=right]{transform:translate(-5px)}.filled.svelte-1kg7ic5{position:absolute;width:100%;height:100%;top:0;left:0}.tippy-box[data-theme~=custom]{background-image:url(https://www.duellinksmeta.com/_app/immutable/assets/background-lines-20971cdc.webp);background-repeat:repeat;border:1px solid #425d79;background-color:#242424;max-height:100vh}.tippy-box[data-theme~=custom]>.tippy-arrow:before,.tippy-box[data-theme~=custom]>.tippy-arrow:after{content:"";position:absolute;border-style:solid;border-color:transparent;z-index:2}.tippy-box[data-theme~=custom][data-placement^=top]>.tippy-arrow:before,.tippy-box[data-theme~=custom][data-placement^=top]>.tippy-arrow:after{top:16px}.tippy-box[data-theme~=custom][data-placement^=top]>.tippy-arrow:before{border-width:10px 10px 0;border-top-color:#425d79}.tippy-box[data-theme~=custom][data-placement^=top]>.tippy-arrow:after{margin-left:2px;border-width:8px 8px 0;border-top-color:#242424}.tippy-box[data-theme~=custom][data-placement^=bottom]>.tippy-arrow:before,.tippy-box[data-theme~=custom][data-placement^=bottom]>.tippy-arrow:after{top:-10px}.tippy-box[data-theme~=custom][data-placement^=bottom]>.tippy-arrow:before{border-width:0 10px 10px;border-bottom-color:#425d79}.tippy-box[data-theme~=custom][data-placement^=bottom]>.tippy-arrow:after{margin:2px 0 0 2px;border-width:0 8px 8px;border-bottom-color:#242424}.tippy-box[data-theme~=custom][data-placement^=right]>.tippy-arrow:before,.tippy-box[data-theme~=custom][data-placement^=right]>.tippy-arrow:after{left:-10px}.tippy-box[data-theme~=custom][data-placement^=right]>.tippy-arrow:before{border-width:10px 10px 10px 0;border-right-color:#425d79}.tippy-box[data-theme~=custom][data-placement^=right]>.tippy-arrow:after{margin:2px 0 0 2px;border-width:8px 8px 8px 0;border-right-color:#242424}.tippy-box[data-theme~=custom][data-placement^=left]>.tippy-arrow:before,.tippy-box[data-theme~=custom][data-placement^=left]>.tippy-arrow:after{left:16px}.tippy-box[data-theme~=custom][data-placement^=left]>.tippy-arrow:before{border-width:10px 0 10px 10px;border-left-color:#425d79;right:unset}.tippy-box[data-theme~=custom][data-placement^=left]>.tippy-arrow:after{margin:2px 2px 0 0;border-width:8px 0 8px 8px;border-left-color:#242424}.tippy-content{padding:.5rem}.full-width{width:100%}.full-width .tippy-content{padding:5px;max-height:100vh;overflow-y:scroll;overflow-x:hidden;margin:0 auto}.full-width .tippy-content>div{display:flex}
+
+.ad-slot.svelte-5xbe0x{background-color:#ffffff0a;border-radius:3px;background-image:url(https://www.duellinksmeta.com/_app/immutable/assets/website-ads-12991e3f.svg);background-position:center;background-repeat:no-repeat;overflow:hidden;display:flex;justify-content:center;align-items:center}.small-ad-container.svelte-5xbe0x{height:94px;margin-bottom:5px}@media screen and (max-width: 757px){.small-ad-container.svelte-5xbe0x{height:64px}}.large-ad-container.svelte-5xbe0x{height:256px;margin:.5rem 0}
+
+.spin.svelte-xj8byo{animation:svelte-xj8byo-spin 2s 0s infinite linear}.pulse.svelte-xj8byo{animation:svelte-xj8byo-spin 1s infinite steps(8)}@keyframes svelte-xj8byo-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+
+.spinner-border.svelte-qigrnk{width:var(--dim);height:var(--dim);border:var(--thickness) solid var(--color);border-right-color:transparent;border-radius:50%;animation:svelte-qigrnk-spinner-border .75s linear infinite}@keyframes svelte-qigrnk-spinner-border{to{transform:rotate(360deg)}}button.svelte-retuhv{width:var(--width);height:var(--height);line-height:1;color:#fff;border:1px solid #fff2;border-radius:3px;background-color:#1d588f;padding:var(--padding);box-shadow:0 0 0 1px #0004}button.primary.svelte-retuhv{background-color:#0070ba}button.danger.svelte-retuhv{background-color:#dc3545}button.svelte-retuhv:not(:disabled):hover{cursor:pointer;filter:brightness(110%)}button.svelte-retuhv:disabled{cursor:not-allowed;filter:brightness(50%);color:#d3d3d3;background-color:inherit;border-color:#fff6}
+
+.social-link.svelte-xrnact{border-radius:5px;background-color:#fff3;color:inherit;text-decoration:none;transition:background-color .15s ease-out;width:40px;height:40px}.twitch-link.svelte-xrnact:hover{background-color:#6441a4}.facebook-link.svelte-xrnact:hover{background-color:#3558a3}.youtube-link.svelte-xrnact:hover{background-color:#ce0000}.twitter-link.svelte-xrnact:hover{background-color:#00aced}.note-link.svelte-xrnact:hover{background-color:#5ab398}.instagram-link.svelte-xrnact:hover{background-color:#c93f66}.spotify-link.svelte-xrnact:hover{background-color:#65d36e}.steam-link.svelte-xrnact:hover{background-color:#32658b}
+
+.close-btn.svelte-1vfdyhv{cursor:pointer;transition:color .15s}.close-btn.svelte-1vfdyhv:hover{color:#77add4}
+
+.button-container.svelte-1kinwdg.svelte-1kinwdg{height:var(--dim);width:var(--dim);backface-visibility:hidden;will-change:transform;background-color:#0d2e4c;color:#ffffffe6}.button-container.svelte-1kinwdg div.svelte-1kinwdg{height:100%;width:100%}.button-container.active-bg.svelte-1kinwdg.svelte-1kinwdg{background-color:#0a87bb;border-color:#0b98d3}.button-container.svelte-1kinwdg.svelte-1kinwdg:not(.disabled):hover{cursor:pointer;filter:brightness(110%)}.button-container.disabled.svelte-1kinwdg.svelte-1kinwdg{cursor:not-allowed;filter:brightness(50%);color:#d3d3d3;background-color:inherit;border-color:#fff6}.button-container.disabled.active-bg.svelte-1kinwdg.svelte-1kinwdg{background-color:#0a87bb}.rotating.svelte-1kinwdg.svelte-1kinwdg{animation:svelte-1kinwdg-rotating .75s linear infinite}@keyframes svelte-1kinwdg-rotating{to{transform:rotate(360deg)}}.danger.svelte-1kinwdg.svelte-1kinwdg{background-color:#dc3545;border-color:#a71d2a}.toggled.svelte-1kinwdg.svelte-1kinwdg{background-color:#004a80;box-shadow:inset 0 0 5px #000000df}
+
+img.svelte-djg3yx{display:block;width:100%;height:100%;object-fit:cover;border-radius:inherit}
+
+div.svelte-curehn{height:var(--height);font-size:1.1em;background:#385979;font-weight:500;letter-spacing:.5px;border-radius:3px;box-shadow:0 0 4px #00080e;transition:filter .2s;color:#fff}div.svelte-curehn:hover{filter:saturate(1.5)}.theme-gold.svelte-curehn{background-color:#9e8b24}
+
+.ring-container.svelte-1iaxjui.svelte-1iaxjui{width:var(--dim);height:var(--dim);position:relative}.ring-container.svelte-1iaxjui .circle.svelte-1iaxjui{border-radius:50%;width:80%;height:80%;background-color:red}.ring-container.svelte-1iaxjui .pulse.svelte-1iaxjui{position:absolute;margin:0 auto;width:110%;height:110%;border:2px solid red;border-radius:50%;opacity:0;animation:svelte-1iaxjui-pulsate 1.2s ease-out infinite}@keyframes svelte-1iaxjui-pulsate{0%{transform:scale(.5);opacity:0}50%{opacity:1}to{transform:scale(1.3);opacity:0}}
+
+a.svelte-sgss0e{width:100%;color:inherit;text-decoration:none!important}
+
+div.svelte-cci1om{border:1px solid #1D3E67;border-radius:3px;display:flex;will-change:transform;overflow:hidden;box-shadow:0 0 10px 2px #0009}
+
+@media screen and (max-width: 575px){.end-label.svelte-vgbkyw{display:none}}.info-wrapper.svelte-14jcqk2{display:inline-flex;align-items:center;width:100%}img.svelte-14jcqk2{max-width:34px;height:auto;margin:-.75rem .4rem -.75rem .15rem}@media screen and (max-width: 575px){img.svelte-14jcqk2{max-width:15%;margin:-.5rem .25rem -.5rem 0}}
+
+[slot=top-label]{word-spacing:.25rem}.countdown-timer.svelte-47azb9.svelte-47azb9{background-color:#07131f;border:1px solid #fff2;border-radius:5px;font-size:.75rem;padding:.5rem .6rem;white-space:nowrap;cursor:default}@media screen and (min-width: 1024px){.countdown-timer.svelte-47azb9.svelte-47azb9{font-size:.9rem}}.countdown-timer.small.svelte-47azb9.svelte-47azb9{font-size:.7rem;padding:.35rem .45rem}@media screen and (min-width: 1024px){.countdown-timer.small.svelte-47azb9.svelte-47azb9{font-size:.85rem}}.countdown-timer.small.svelte-47azb9 .icon-container.svelte-47azb9{margin-right:7px}.countdown-timer.shadow.svelte-47azb9.svelte-47azb9{box-shadow:#0009 0 1px 3px 1px}.countdown-timer.svelte-47azb9 .icon-container.svelte-47azb9{color:#fff7;margin-right:10px;display:flex;transition:transform ease-out .15s;backface-visibility:hidden;will-change:transform}.countdown-timer.svelte-47azb9 .icon-container.rotating.svelte-47azb9{animation:svelte-47azb9-hourglass 2s -.3s ease-in-out infinite}.countdown-timer.svelte-47azb9 .clock.svelte-47azb9{width:100%;white-space:nowrap}.countdown-timer.svelte-47azb9 .clock .timer span.svelte-47azb9{margin:0 1.5px}@media screen and (min-width: 1024px){.countdown-timer.svelte-47azb9 .clock .timer span.svelte-47azb9{margin:0 2px}}.countdown-timer.svelte-47azb9 .clock .timer span.day-delimiter.svelte-47azb9{margin:0 3px}@media screen and (min-width: 1024px){.countdown-timer.svelte-47azb9 .clock .timer span.day-delimiter.svelte-47azb9{margin:0 5px}}.countdown-timer.svelte-47azb9 .clock .timer span.svelte-47azb9:last-child{margin-right:0}.countdown-delimiter.svelte-47azb9.svelte-47azb9{color:#5d5d5d;font-size:95%}@keyframes svelte-47azb9-hourglass{0%{transform:rotate(0)}15%{transform:rotate(180deg)}50%{transform:rotate(180deg)}65%{transform:rotate(359deg)}to{transform:rotate(360deg)}}
+
+.tabbed-container.svelte-umfxo{display:flex;flex-direction:column;min-height:0}ul.svelte-umfxo{display:flex;flex-flow:row nowrap;list-style:none;padding-left:0;margin-bottom:0;overflow-x:auto}li.svelte-umfxo{display:flex;border-bottom:2px solid #123F50;transition:all .15s ease-out;transition-property:color,border-bottom-color}li.filler.svelte-umfxo{flex-basis:0;flex-grow:1}li.svelte-umfxo:not(.filler){cursor:pointer;text-align:center;text-transform:uppercase;font-size:1.3rem;white-space:nowrap;line-height:1;padding:.5rem .6rem}li:not(.filler).active.svelte-umfxo{color:#0a87bb;border-color:#0a87bb}li.svelte-umfxo:not(.filler):hover:not(.active){color:#77add4;border-color:#77add466}@media screen and (max-width: 575px){li.svelte-umfxo:not(.filler){font-size:1.2rem}}@media (hover: hover){ul.svelte-umfxo{flex-flow:row wrap;margin-bottom:-.5rem}li.svelte-umfxo{margin-bottom:.5rem}}@media screen and (hover: hover) and (max-width: 575px){.filler.svelte-umfxo{display:none}}.tab-content.svelte-5no1h4{display:none;min-height:0;transition:opacity .15s linear}.tab-content.active.svelte-5no1h4{display:flex;flex-direction:column}
+
+.bubble-container.svelte-17gsder.svelte-17gsder{width:100%;z-index:2}.spinner.svelte-17gsder.svelte-17gsder{text-align:center;width:60px;margin:.25em}.spinner.svelte-17gsder div.svelte-17gsder{width:18px;height:18px;background-color:#0a87bb;border-radius:100%;display:inline-block;animation:svelte-17gsder-sk-bouncedelay 1.4s infinite ease-in-out both}.spinner.svelte-17gsder .bounce1.svelte-17gsder{animation-delay:-.32s}.spinner.svelte-17gsder .bounce2.svelte-17gsder{animation-delay:-.16s}@keyframes svelte-17gsder-sk-bouncedelay{0%,80%,to{transform:scale(0)}40%{transform:scale(1)}}
+
+@charset "UTF-8";ul.svelte-dmz3pp.svelte-dmz3pp{padding:0;border:1px solid rgba(255,255,255,.18);border-radius:3px;margin-bottom:1em}@media screen and (max-width: 575px){ul.svelte-dmz3pp.svelte-dmz3pp{margin-bottom:.75em}}ul.svelte-dmz3pp li.svelte-dmz3pp{list-style:none;background-color:#243b5566}@media (hover: hover){ul.svelte-dmz3pp li.svelte-dmz3pp:hover{background-color:#243b55cc}}ul.svelte-dmz3pp li.svelte-dmz3pp:first-child{border-top-left-radius:3px;border-top-right-radius:3px}ul.svelte-dmz3pp li.svelte-dmz3pp:last-child{border-bottom-left-radius:3px;border-bottom-right-radius:3px}ul.svelte-dmz3pp li a.svelte-dmz3pp{width:100%;text-decoration:none;display:inline-block;padding:.5rem .5rem .5rem .75rem;color:#dedede}@media screen and (max-width: 575px){.item-wrapper.svelte-dmz3pp.svelte-dmz3pp{flex-wrap:wrap}}.item-wrapper.svelte-dmz3pp .date.svelte-dmz3pp,.item-wrapper.svelte-dmz3pp .title.svelte-dmz3pp{font-weight:700}.item-wrapper.svelte-dmz3pp .title.svelte-dmz3pp{color:#56b2ef;margin:0 .1em}.item-wrapper.svelte-dmz3pp .info-section.svelte-dmz3pp{flex:1;overflow:hidden}@media screen and (max-width: 575px){.item-wrapper.svelte-dmz3pp .info-section.svelte-dmz3pp{width:100%;flex:auto}}@media screen and (min-width: 576px),print{.item-wrapper.svelte-dmz3pp .info-section.svelte-dmz3pp:before{content:"\2013";margin-right:.25rem}}.item-wrapper.svelte-dmz3pp .info-section .description.svelte-dmz3pp{flex:1}a.svelte-b7s08f:hover{text-decoration:none!important}div.columns.is-variable.svelte-b7s08f{margin-top:0}@media screen and (max-width: 575px){div.columns.is-variable.svelte-b7s08f{margin-top:.25rem}}.banner.svelte-1s7mxq9.svelte-1s7mxq9.svelte-1s7mxq9{position:relative;overflow:hidden;background:rgba(92,0,6,.8);border-color:#ffffff2e;color:#dedede!important;margin-bottom:.75rem}@media screen and (min-width: 1024px){.banner.svelte-1s7mxq9.svelte-1s7mxq9.svelte-1s7mxq9{margin-bottom:1rem}}.banner.svelte-1s7mxq9.svelte-1s7mxq9.svelte-1s7mxq9:hover{background:rgba(102,0,7,.8);text-decoration:none!important}.banner.svelte-1s7mxq9:hover .background-image.svelte-1s7mxq9.svelte-1s7mxq9{filter:blur(4px)}.banner.svelte-1s7mxq9 .svelte-1s7mxq9.svelte-1s7mxq9{text-align:left}.banner.svelte-1s7mxq9 .background-image.svelte-1s7mxq9.svelte-1s7mxq9{--mask:linear-gradient(to left, #000 30%, transparent 80%);-webkit-mask-image:var(--mask);mask-image:var(--mask);filter:blur(3px);position:absolute;right:0;top:0;z-index:-1}@media (max-width: 768px){.banner.svelte-1s7mxq9 .banner-wrapper.svelte-1s7mxq9.svelte-1s7mxq9{flex-wrap:wrap}.banner.svelte-1s7mxq9 .banner-content.svelte-1s7mxq9.svelte-1s7mxq9{order:3;width:100%;margin-top:.25rem}}.banner.svelte-1s7mxq9 .section-title.svelte-1s7mxq9.svelte-1s7mxq9{text-shadow:-1px 2px 2px black;font-size:1.5rem}@media screen and (max-width: 575px){.banner.svelte-1s7mxq9 .section-title.svelte-1s7mxq9.svelte-1s7mxq9{font-size:1.35rem}}.banner.svelte-1s7mxq9 .banner-image.svelte-1s7mxq9.svelte-1s7mxq9{flex:0 0 10em}@media screen and (min-width: 1024px){.banner.svelte-1s7mxq9 .banner-image.svelte-1s7mxq9.svelte-1s7mxq9{height:8em}}.banner.svelte-1s7mxq9 .tagline-container img.svelte-1s7mxq9.svelte-1s7mxq9{height:1em}.banner.svelte-1s7mxq9 .character-container.svelte-1s7mxq9.svelte-1s7mxq9{padding:.5em;margin:0 -.75em -.75rem}.banner.svelte-1s7mxq9 .character-container .character-image.svelte-1s7mxq9.svelte-1s7mxq9{margin:.25rem}.banner.svelte-1s7mxq9 .character-container .character-image.svelte-1s7mxq9>img.svelte-1s7mxq9{width:3em}.banner.svelte-1s7mxq9 .character-container .character-image.svelte-1s7mxq9>img.svelte-1s7mxq9:hover{filter:brightness(112%)}.banner.svelte-1s7mxq9 .separator.svelte-1s7mxq9.svelte-1s7mxq9{border:1px solid #fff3;border-radius:3px}.banner.svelte-1s7mxq9 .countdown.svelte-1s7mxq9.svelte-1s7mxq9{margin-left:1rem}@media (max-width: 768px){.banner.svelte-1s7mxq9 .countdown.svelte-1s7mxq9.svelte-1s7mxq9{margin-left:0}}
+
+.image-card.svelte-rk0oyd.svelte-rk0oyd{display:block;background-color:#080d780d;box-shadow:0 0 4px #000;border:1px solid #1a3046;border-radius:5px;transition:transform .4s;color:#dedede;backface-visibility:hidden;transform-style:preserve-3d;will-change:transform}@media (hover: hover){.image-card.svelte-rk0oyd.svelte-rk0oyd:hover{transform:scale(1.04)}}.image-card.svelte-rk0oyd .card-inner.svelte-rk0oyd{line-height:0}.image-card.svelte-rk0oyd .card-inner .top-right-info.svelte-rk0oyd{position:absolute;top:0;right:0;width:70%;display:flex;justify-content:flex-end;margin:.3rem}.image-card.svelte-rk0oyd .card-inner .top-right-info.featured.svelte-rk0oyd{padding-right:calc(.5rem + (100% / 3.35))}.image-card.svelte-rk0oyd .card-inner .image-cover.svelte-rk0oyd{width:100%;object-fit:contain;border-radius:5px}.image-card.svelte-rk0oyd .card-inner .information.svelte-rk0oyd{position:absolute;display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;line-height:normal;left:0;bottom:0;width:100%;padding:.4em;background:linear-gradient(90deg,rgba(0,25,50,.8) 40%,rgba(0,25,50,.2) 100%);border-bottom-left-radius:5px;border-bottom-right-radius:5px}.image-card.svelte-rk0oyd .card-inner .information .title.svelte-rk0oyd{font-size:130%;font-weight:500;width:100%;text-shadow:1.5px 1.5px 2px rgba(14,37,128,.9);letter-spacing:-.2px;line-height:.975;margin:0;text-align:left}@media screen and (min-width: 576px),print{.image-card.svelte-rk0oyd .card-inner .information .title.svelte-rk0oyd{font-size:140%}}@media screen and (min-width: 1024px){.image-card.svelte-rk0oyd .card-inner .information .title.svelte-rk0oyd{font-size:170%}}.image-card.svelte-rk0oyd .card-inner .information .sub-text.svelte-rk0oyd{font-size:85%}.perspective.svelte-rk0oyd.svelte-rk0oyd{perspective:1000px}.ribbon.svelte-1h9rb1w{position:absolute;top:.3em;left:-.5em;padding:.15em .95em 0;border-radius:2px 0 0 2px;height:1.9em;line-height:1.9em;text-align:center;color:#fff;text-transform:uppercase;font-weight:500;text-shadow:1px 1px 5px rgba(0,0,0,.8);filter:drop-shadow(1px 2px 2px black);background:gray}.ribbon.svelte-1h9rb1w:after{border-left-color:gray}.ribbon.svelte-1h9rb1w:before,.ribbon.svelte-1h9rb1w:after{content:"";position:absolute}.ribbon.svelte-1h9rb1w:before{height:0;width:0;left:0;bottom:0;transform:translateY(100%);border-top:.6em solid black;border-left:calc(.5em - 1px) solid transparent}.ribbon.svelte-1h9rb1w:after{height:1.9em;width:1.9em;right:-1.9em;top:0;border-top:.95em solid transparent;border-bottom:.95em solid transparent;border-left:.6333333333em solid grey}.ribbon.event.svelte-1h9rb1w{background:#22AF00}.ribbon.event.svelte-1h9rb1w:after{border-left-color:#22af00}.ribbon.tcg.svelte-1h9rb1w{background:#E1AD01}.ribbon.tcg.svelte-1h9rb1w:after{border-left-color:#e1ad01}.ribbon.ocg.svelte-1h9rb1w{background:#FF5349}.ribbon.ocg.svelte-1h9rb1w:after{border-left-color:#ff5349}.ribbon.farming.svelte-1h9rb1w{background:#B93FD8}.ribbon.farming.svelte-1h9rb1w:after{border-left-color:#b93fd8}.ribbon.news.svelte-1h9rb1w{background:#3B98F0}.ribbon.news.svelte-1h9rb1w:after{border-left-color:#3b98f0}.ribbon.website-update.svelte-1h9rb1w{background:#A91B53}.ribbon.website-update.svelte-1h9rb1w:after{border-left-color:#a91b53}.ribbon.competitive.svelte-1h9rb1w{background:#A7008A}.ribbon.competitive.svelte-1h9rb1w:after{border-left-color:#a7008a}.ribbon.guide.svelte-1h9rb1w{background:#C37700}.ribbon.guide.svelte-1h9rb1w:after{border-left-color:#c37700}.ribbon.set-release.svelte-1h9rb1w{background:#A72400}.ribbon.set-release.svelte-1h9rb1w:after{border-left-color:#a72400}.ribbon.tier-list.svelte-1h9rb1w{background:#315FF5}.ribbon.tier-list.svelte-1h9rb1w:after{border-left-color:#315ff5}.ribbon.tournament.svelte-1h9rb1w{background:#6C3799}.ribbon.tournament.svelte-1h9rb1w:after{border-left-color:#6c3799}.ribbon.clan-wars.svelte-1h9rb1w{background:#DA70D6}.ribbon.clan-wars.svelte-1h9rb1w:after{border-left-color:orchid}.ribbon.memes.svelte-1h9rb1w{background:#d60bf8}.ribbon.memes.svelte-1h9rb1w:after{border-left-color:#d60bf8}.featured-icon.svelte-1h9rb1w{position:absolute;top:-1px;right:0;width:calc(100% / 3.35);height:auto}
+
+div.svelte-1yj91j0 img.svelte-1yj91j0{width:1em;height:1em}div.svelte-1yj91j0 span.svelte-1yj91j0,div.svelte-wzgmd6 span.svelte-wzgmd6{font-size:.9em}.star-icon.svelte-wzgmd6.svelte-wzgmd6{height:1.1em;width:auto;margin-right:.25rem;vertical-align:middle}.user-container.svelte-r3qtvu.svelte-r3qtvu{max-width:550px}.user-container.svelte-r3qtvu .img-container.svelte-r3qtvu{width:4.5em;border-radius:50%;overflow:hidden}.user-container.svelte-r3qtvu .display-container.svelte-r3qtvu{padding:.15rem .35rem;margin:0 -.6rem}.user-container.svelte-r3qtvu .display-container div.svelte-r3qtvu{margin:.15rem .25rem}.user-container.svelte-r3qtvu .user-roles.svelte-r3qtvu{padding:0 .5rem .5rem;margin:0 -.65rem -.65rem}.user-container.svelte-r3qtvu .user-roles div.svelte-r3qtvu{margin:.15rem}.pro-icon.svelte-r3qtvu.svelte-r3qtvu{height:1.6em;width:2.7em}.description-container.svelte-r3qtvu span.svelte-r3qtvu{word-break:break-word}.username-text.svelte-1y131ia{overflow:hidden;text-overflow:ellipsis;white-space:normal}
+
+svg.svelte-ltdrok{--startColor:#fae170;--midColor:#e3772e;--endColor:#752210}.gift-icon.svelte-ltdrok{padding-bottom:.1rem}.gift-icon.svelte-ltdrok svg path{fill:url(index.html)}a.svelte-13hympz.svelte-13hympz{display:flex;justify-content:center;align-items:center;padding:.1rem .3rem;background:black;border-radius:3px;border:1px solid #f4b844;height:25px;width:45px}a.giftable.svelte-13hympz.svelte-13hympz{width:95px;cursor:pointer}a.giftable.svelte-13hympz .gift-label.svelte-13hympz{font-size:1rem;padding-top:3px;line-height:.8;background-image:linear-gradient(#fae170,#e3772e 72.5%,#752210);background-clip:text;-webkit-background-clip:text;color:transparent;font-weight:500}a.fill.svelte-13hympz.svelte-13hympz{height:100%;width:100%}a.disabled.svelte-13hympz.svelte-13hympz{filter:grayscale(100%)}a.svelte-13hympz.svelte-13hympz:hover{text-decoration:none!important}
+
+div.svelte-16h7w79{aspect-ratio:1/var(--ratio)}@supports not (aspect-ratio: auto){div.svelte-16h7w79:before{content:"";float:left;padding-top:calc(var(--ratio) * 100%)}div.svelte-16h7w79:after{content:"";display:table;clear:both}}
+
+div.svelte-aose98.svelte-aose98{display:flex;flex-direction:column;height:100%;line-height:1.15}div.background.svelte-aose98.svelte-aose98{padding:10px;background-color:#ffffff14;border-radius:5px;border:1px solid #ffffff1a;box-shadow:0 0 5px #000}footer.svelte-aose98.svelte-aose98{width:100%;margin-top:1em;display:flex;justify-content:space-between;align-items:flex-end}footer.svelte-aose98 [name=right-footer].svelte-aose98{text-align:end}footer.svelte-aose98.svelte-aose98:empty{display:none}
+
+.role.svelte-a9l64x.svelte-a9l64x{border:1px solid;border-radius:1.5em;color:var(--rolecolor, #dedede);border-color:var(--rolecolor, #dedede);background:#091930;height:40px;white-space:nowrap;font-weight:800;user-select:none}.role.small.svelte-a9l64x.svelte-a9l64x{height:initial;background:rgba(5,15,28,.6);font-size:.8em;border-radius:1em;letter-spacing:.1px;padding:.4em .5em}.role.active.svelte-a9l64x.svelte-a9l64x{border-width:4px;border-style:outset;border-left-style:dotted}.role.active.svelte-a9l64x span.svelte-a9l64x{text-shadow:-1px 1px 1px #00000099}
+</style>
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/pages/__layout.svelte-4c6cf8c2.css">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/Tooltip-1a39b997.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/SlotAd-d7259fa3.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/fa-1a4d12fd.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/Button-b9761629.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/SocialButtons-2c41c5ba.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/Notifications-2319f983.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/IconButton-34fb79a6.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/Avatar-29041bce.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/NavButton-9e856b97.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/LiveIndicator-0c662a3c.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/LinkButton-ad9cedf0.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/TwitchEmbed-2594a007.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/NavTabs-2c96022e.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/Countdown-d133d19e.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/Tab-730e4f38.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/LoadBubbles-454bcd76.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/pages/index.svelte-851c92ae.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/ArticleCard-072c7307.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/ProfileLink-f93441b6.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/DMCProButton-23912fdb.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/AspectBox-708f1769.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/ContainerWithFooter-e145a161.css" disabled media="(max-width: 0)">
+	<link rel="stylesheet" href="https://www.duellinksmeta.com/_app/immutable/assets/Role-d8a66306.css" disabled media="(max-width: 0)">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/start-c9241024.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/index-f3b821da.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/index-00d6c4d0.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/preload-helper-60cab3ee.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/singletons-d1fb5791.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/pages/__layout.svelte-068f0b0c.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/Fetcher-5b194d6c.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/Env-a9142bcd.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/UserInfoStores-eb5530b9.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/UserUtils-cd50344f.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/External-1ba9b954.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/MetaDataStores-d3ec1c6f.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/SkLoad-ad4c273e.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/Internal-3df29350.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/DatabaseStores-b185bf3e.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/DatabaseStores-84f34b38.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/_baseIsEqual-7f5588dc.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/Tooltip-d737f69d.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/index.es-dfe41670.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/stores-100e8a96.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/SlotAd-d3f27e17.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/fa-454424ea.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/Button-076853fe.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/Locale-3a7de6a5.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/SocialButtons-3f882c4b.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/Notifications-7196d5f8.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/IconButton-5a2b6a8d.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/index-7be5f47f.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/index-eb87392e.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/UiUtils-baaedc9e.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/ModalStores-33204979.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/PushNotifications-547d11c3.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/Avatar-d3337438.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/NavButton-b31ce05e.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/LiveIndicator-4e5aff96.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/LinkButton-ed9f202e.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/TwitchEmbed-32f3e47a.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/Viewport-47e9f4b9.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/NavTabs-be8afe2c.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/compact-2bb88180.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/Countdown-ec4ed58d.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/TextInfo-2e32278a.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/Content-4ff081b4.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/ImageUtils-5e58a7bb.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/navigation-6709cf39.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/Tab-f939ca96.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/LoadBubbles-187c8ede.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/pages/index.svelte-d53fb3a2.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/ArticleList-acbe47a4.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/ArticleCard-cdeb8602.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/Content-439cfcb6.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/ProfileLink-732c7a40.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/DMCProButton-4b3754a3.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/AspectBox-ed8a6d6b.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/ContainerWithFooter-cab54561.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/gem-dc5af05a.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/Role-a98bea67.js">
+	<link rel="modulepreload" href="https://www.duellinksmeta.com/_app/immutable/chunks/MainNavCards-e8a24c32.js">
+			<script>
+		if ('serviceWorker' in navigator) {
+			addEventListener('load', () => {
+				navigator.serviceWorker.register('/service-worker.js');
+			});
+		}
+	</script>
+</head>
+
+<body>
+    <div id="svelte">
+
+
+
+
+
+<div id="error-container" class="is-hidden p-2 line-height-1 svelte-yxaw39" data-html2canvas-ignore><div class="close-btn svelte-yxaw39"><svg id="" class="svelte-fa svelte-xj8byo" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 352 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(176 256)" transform-origin="88 0"><g transform="translate(0,0) scale(1,1)"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" fill="currentColor" transform="translate(-176 -256)"></path></g></g></svg></div>
+    <div class="h2 m-0 red-shadow mb-1">Something went wrong...</div>
+    <code id="error-msg"></code>
+    <div class="columns is-variable is-1 mt-2 is-flex is-centered"><div class="column is-4"><button style="--height: 40px; --width: 100%; --padding: 8px" class="is-flex is-justify-content-center is-align-items-center is-unselectable svelte-retuhv primary" ><span class="is-flex is-align-items-center is-justify-content-center mr-2"><svg id="" class="svelte-fa svelte-xj8byo" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 512 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(256 256)" transform-origin="128 0"><g transform="translate(0,0) scale(1,1)"><path d="M370.72 133.28C339.458 104.008 298.888 87.962 255.848 88c-77.458.068-144.328 53.178-162.791 126.85-1.344 5.363-6.122 9.15-11.651 9.15H24.103c-7.498 0-13.194-6.807-11.807-14.176C33.933 94.924 134.813 8 256 8c66.448 0 126.791 26.136 171.315 68.685L463.03 40.97C478.149 25.851 504 36.559 504 57.941V192c0 13.255-10.745 24-24 24H345.941c-21.382 0-32.09-25.851-16.971-40.971l41.75-41.749zM32 296h134.059c21.382 0 32.09 25.851 16.971 40.971l-41.75 41.75c31.262 29.273 71.835 45.319 114.876 45.28 77.418-.07 144.315-53.144 162.787-126.849 1.344-5.363 6.122-9.15 11.651-9.15h57.304c7.498 0 13.194 6.807 11.807 14.176C478.067 417.076 377.187 504 256 504c-66.448 0-126.791-26.136-171.315-68.685L48.97 471.03C33.851 486.149 8 475.441 8 454.059V320c0-13.255 10.745-24 24-24z" fill="currentColor" transform="translate(-256 -256)"></path></g></g></svg></span>
+    <div class="has-text-centered" style="order: 0; overflow: visible">Reload Page</div>
+    
+</button></div>
+        </div>
+</div>
+
+
+
+
+<nav class="navbar is-transparent is-flex is-align-items-center svelte-5x5tvn" aria-label="main navigation"><div class="navbar-inner svelte-5x5tvn"><div class="outer-navbar-section is-flex is-justify-content-flex-start pr-2 is-align-items-center"><a sveltekit:prefetch class="logo-wrapper dlm-logo-wrapper is-flex is-align-items-center is-hidden-mobile is-hidden-tablet-only svelte-5x5tvn" href="index.html"><img class="navbar-logo svelte-5x5tvn" src="https://www.duellinksmeta.com/_app/immutable/assets/site-logo-dlm-f9b9106e.svg" alt="Yu-Gi-Oh! Duel Links Meta"></a>
+            <div role="button" class="menu-button is-clickable is-flex is-align-items-center is-justify-content-center is-hidden-desktop svelte-5x5tvn"><div><div class="bar1 svelte-5x5tvn"></div>
+                    <div class="bar2 svelte-5x5tvn"></div>
+                    <div class="bar3 svelte-5x5tvn"></div></div></div>
+            <div class="is-desktop-only is-hidden-touch"><span class=" svelte-1kg7ic5"><div class="ml-2 dropdown-sites is-clickable"><div style="--dim: 20px;" class="button-container form-control-border svelte-1kinwdg"><div class="is-flex is-justify-content-center is-align-items-center is-unselectable svelte-1kinwdg"><svg id="" class="no-select svelte-fa svelte-xj8byo" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 448 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(224 256)" transform-origin="112 0"><g transform="translate(0,0) scale(1,1)"><path d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z" fill="currentColor" transform="translate(-224 -256)"></path></g></g></svg></div>
+</div></div>
+</span></div></div>
+        <div class="is-flex is-align-items-center inner-navbar-section is-justify-content-center px-5 svelte-5x5tvn"><div class="links-desktop is-flex is-flex-direction-row is-justify-content-space-evenly is-hidden-tablet-only is-hidden-mobile svelte-5x5tvn"><a sveltekit:prefetch class="navbar-item line-height-1 svelte-12hj0h0" href="https://www.duellinksmeta.com/tier-list/"><span class="is-uppercase has-text-centered svelte-12hj0h0">Tier List</span>
+</a><a sveltekit:prefetch class="navbar-item line-height-1 svelte-12hj0h0" href="https://www.duellinksmeta.com/top-decks/"><span class="is-uppercase has-text-centered svelte-12hj0h0">Top Decks: Speed</span>
+</a><a sveltekit:prefetch class="navbar-item line-height-1 svelte-12hj0h0" href="https://www.duellinksmeta.com/top-decks/rush"><span class="is-uppercase has-text-centered svelte-12hj0h0">Top Decks: Rush</span>
+</a><a sveltekit:prefetch class="navbar-item line-height-1 svelte-12hj0h0" href="https://www.duellinksmeta.com/farming-and-events/"><span class="is-uppercase has-text-centered svelte-12hj0h0">Farming &amp; Events</span>
+</a><a sveltekit:prefetch class="navbar-item line-height-1 svelte-12hj0h0" href="https://www.duellinksmeta.com/leaks-and-updates/"><span class="is-uppercase has-text-centered svelte-12hj0h0">Leaks &amp; Updates</span>
+</a></div>
+            <a class="logo-wrapper dlm-logo-wrapper is-flex is-hidden-desktop svelte-5x5tvn" href="index.html"><img class="navbar-logo svelte-5x5tvn" src="https://www.duellinksmeta.com/_app/immutable/assets/site-logo-dlm-f9b9106e.svg" alt="Yu-Gi-Oh! Duel Links Meta"></a>
+            <div class="is-hidden-desktop"><span class=" svelte-1kg7ic5"><div class="ml-2 dropdown-sites is-clickable"><div style="--dim: 20px;" class="button-container form-control-border svelte-1kinwdg"><div class="is-flex is-justify-content-center is-align-items-center is-unselectable svelte-1kinwdg"><svg id="" class="no-select svelte-fa svelte-xj8byo" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 448 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(224 256)" transform-origin="112 0"><g transform="translate(0,0) scale(1,1)"><path d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z" fill="currentColor" transform="translate(-224 -256)"></path></g></g></svg></div>
+</div></div>
+</span></div></div>
+        <div class="outer-navbar-section pl-2 is-flex is-align-items-center is-justify-content-flex-end"><div class="search-button navbar-item p-0 pr-2"><div class="nav-icon svelte-1kl57l0"><svg id="" class="svelte-fa svelte-xj8byo" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 448 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(224 256)" transform-origin="112 0"><g transform="translate(0,0) scale(1,1)"><path d="M448 449L301.2 300.2c20-27.9 31.9-62.2 31.9-99.2 0-93.1-74.7-168.9-166.5-168.9C74.7 32 0 107.8 0 200.9s74.7 168.9 166.5 168.9c39.8 0 76.3-14.2 105-37.9l146 148.1 30.5-31zM166.5 330.8c-70.6 0-128.1-58.3-128.1-129.9S95.9 71 166.5 71s128.1 58.3 128.1 129.9-57.4 129.9-128.1 129.9z" fill="currentColor" transform="translate(-224 -256)"></path></g></g></svg>
+</div></div>
+
+<div class="navbar-item p-0 pl-2"><div class="is-hidden-mobile"><div class="is-clickable is-flex is-justify-content-center is-align-items-center has-text-centered line-height-1 px-2 svelte-curehn is-uppercase" style="--height: 32px;">Login
+    
+        
+    
+</div></div>
+        <div class="is-hidden-tablet"><div class="nav-icon svelte-1kl57l0"><svg id="" class="svelte-fa svelte-xj8byo" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 448 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(224 256)" transform-origin="112 0"><g transform="translate(0,0) scale(1,1)"><path d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" fill="currentColor" transform="translate(-224 -256)"></path></g></g></svg>
+</div></div></div></div></div>
+    
+</nav>
+
+<div id="tooltip-root"></div>
+
+<main class="is-flex is-flex-direction-column is-flex-wrap-nowrap is-align-items-center svelte-ufnb8e"><div class="content-container svelte-ufnb8e"><div class="full-width"></div>
+        <div class="ad-slot svelte-5xbe0x large-ad-container"><div></div></div>
+        <div class="main-tab my-0 columns is-2-tablet is-1-mobile is-variable is-mobile is-multiline"><div class="column is-4-desktop is-4-tablet is-6-mobile"><div class="perspective svelte-rk0oyd"><a role="button" class="image-card svelte-rk0oyd" sveltekit:prefetch href="https://www.duellinksmeta.com/tier-list/"><div class="card-inner svelte-rk0oyd"><div class="top-right-info svelte-rk0oyd"></div>
+            <div style="--ratio: 0.54;" class="svelte-16h7w79"><img class="image-cover svelte-rk0oyd" alt="Tier List" srcset="https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Tier/7-6-26.webp&amp;w=80&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 80w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Tier/7-6-26.webp&amp;w=120&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 120w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Tier/7-6-26.webp&amp;w=240&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 240w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Tier/7-6-26.webp&amp;w=360&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 360w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Tier/7-6-26.webp&amp;w=520&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 520w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Tier/7-6-26.webp&amp;w=640&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 640w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Tier/7-6-26.webp&amp;w=800&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 800w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Tier/7-6-26.webp&amp;w=1000&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1000w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Tier/7-6-26.webp&amp;w=1200&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1200w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Tier/7-6-26.webp&amp;w=1400&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1400w" sizes="(min-width: 1080px) 356px, (min-width: 576px) 33vw, (max-width: 575px) 50vw"></div>
+
+
+            
+            <div class="information svelte-rk0oyd"><section class="full-width"><p class="title svelte-rk0oyd is-uppercase">Tier List</p>
+                    <div class="sub-text full-width svelte-rk0oyd"><div slot="info" class="is-flex"><div class="is-inline-flex">No recent updates</div>
+                </div></div></section></div></div></a>
+</div>
+        </div><div class="column is-4-desktop is-4-tablet is-6-mobile"><div class="perspective svelte-rk0oyd"><a role="button" class="image-card svelte-rk0oyd" sveltekit:prefetch href="https://www.duellinksmeta.com/top-decks/"><div class="card-inner svelte-rk0oyd"><div class="top-right-info svelte-rk0oyd"></div>
+            <div style="--ratio: 0.54;" class="svelte-16h7w79"><img class="image-cover svelte-rk0oyd" alt="Top Decks: Speed" srcset="https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks.jpg&amp;w=80&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 80w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks.jpg&amp;w=120&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 120w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks.jpg&amp;w=240&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 240w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks.jpg&amp;w=360&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 360w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks.jpg&amp;w=520&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 520w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks.jpg&amp;w=640&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 640w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks.jpg&amp;w=800&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 800w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks.jpg&amp;w=1000&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1000w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks.jpg&amp;w=1200&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1200w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks.jpg&amp;w=1400&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1400w" sizes="(min-width: 1080px) 356px, (min-width: 576px) 33vw, (max-width: 575px) 50vw"></div>
+
+
+            
+            <div class="information svelte-rk0oyd"><section class="full-width"><p class="title svelte-rk0oyd is-uppercase">Top Decks: Speed</p>
+                    <div class="sub-text full-width svelte-rk0oyd"><div slot="info" class="is-flex"><div class="is-inline-flex">No recent updates</div>
+                </div></div></section></div></div></a>
+</div>
+        </div><div class="column is-4-desktop is-4-tablet is-6-mobile"><div class="perspective svelte-rk0oyd"><a role="button" class="image-card svelte-rk0oyd" sveltekit:prefetch href="https://www.duellinksmeta.com/top-decks/rush"><div class="card-inner svelte-rk0oyd"><div class="top-right-info svelte-rk0oyd"></div>
+            <div style="--ratio: 0.54;" class="svelte-16h7w79"><img class="image-cover svelte-rk0oyd" alt="Top Decks: Rush" srcset="https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks-rush.webp&amp;w=80&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 80w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks-rush.webp&amp;w=120&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 120w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks-rush.webp&amp;w=240&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 240w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks-rush.webp&amp;w=360&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 360w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks-rush.webp&amp;w=520&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 520w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks-rush.webp&amp;w=640&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 640w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks-rush.webp&amp;w=800&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 800w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks-rush.webp&amp;w=1000&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1000w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks-rush.webp&amp;w=1200&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1200w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/top-decks-rush.webp&amp;w=1400&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1400w" sizes="(min-width: 1080px) 356px, (min-width: 576px) 33vw, (max-width: 575px) 50vw"></div>
+
+
+            
+            <div class="information svelte-rk0oyd"><section class="full-width"><p class="title svelte-rk0oyd is-uppercase">Top Decks: Rush</p>
+                    <div class="sub-text full-width svelte-rk0oyd"><div slot="info" class="is-flex"><div class="is-inline-flex">No recent updates</div>
+                </div></div></section></div></div></a>
+</div>
+        </div><div class="column is-4-desktop is-4-tablet is-6-mobile"><div class="perspective svelte-rk0oyd"><a role="button" class="image-card svelte-rk0oyd" sveltekit:prefetch href="https://www.duellinksmeta.com/farming-and-events/"><div class="card-inner svelte-rk0oyd"><div class="top-right-info svelte-rk0oyd"></div>
+            <div style="--ratio: 0.54;" class="svelte-16h7w79"><img class="image-cover svelte-rk0oyd" alt="Farming &amp; Events" srcset="https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Events/kc-cup-dlm.webp&amp;w=80&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 80w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Events/kc-cup-dlm.webp&amp;w=120&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 120w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Events/kc-cup-dlm.webp&amp;w=240&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 240w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Events/kc-cup-dlm.webp&amp;w=360&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 360w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Events/kc-cup-dlm.webp&amp;w=520&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 520w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Events/kc-cup-dlm.webp&amp;w=640&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 640w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Events/kc-cup-dlm.webp&amp;w=800&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 800w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Events/kc-cup-dlm.webp&amp;w=1000&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1000w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Events/kc-cup-dlm.webp&amp;w=1200&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1200w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/Events/kc-cup-dlm.webp&amp;w=1400&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1400w" sizes="(min-width: 1080px) 356px, (min-width: 576px) 33vw, (max-width: 575px) 50vw"></div>
+
+
+            
+            <div class="information svelte-rk0oyd"><section class="full-width"><p class="title svelte-rk0oyd is-uppercase">Farming &amp; Events</p>
+                    <div class="sub-text full-width svelte-rk0oyd"><div slot="info" class="is-flex"><div class="is-inline-flex is-align-items-center"><span>No active events</span></div>
+                </div></div></section></div></div></a>
+</div>
+        </div><div class="column is-4-desktop is-4-tablet is-6-mobile"><div class="perspective svelte-rk0oyd"><a role="button" class="image-card svelte-rk0oyd" sveltekit:prefetch href="https://www.duellinksmeta.com/leaks-and-updates/"><div class="card-inner svelte-rk0oyd"><div class="top-right-info svelte-rk0oyd"></div>
+            <div style="--ratio: 0.54;" class="svelte-16h7w79"><img class="image-cover svelte-rk0oyd" alt="Leaks &amp; Updates" srcset="https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/leaks.jpg&amp;w=80&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 80w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/leaks.jpg&amp;w=120&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 120w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/leaks.jpg&amp;w=240&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 240w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/leaks.jpg&amp;w=360&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 360w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/leaks.jpg&amp;w=520&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 520w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/leaks.jpg&amp;w=640&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 640w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/leaks.jpg&amp;w=800&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 800w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/leaks.jpg&amp;w=1000&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1000w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/leaks.jpg&amp;w=1200&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1200w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/leaks.jpg&amp;w=1400&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1400w" sizes="(min-width: 1080px) 356px, (min-width: 576px) 33vw, (max-width: 575px) 50vw"></div>
+
+
+            
+            <div class="information svelte-rk0oyd"><section class="full-width"><p class="title svelte-rk0oyd is-uppercase">Leaks &amp; Updates</p>
+                    <div class="sub-text full-width svelte-rk0oyd"><div slot="info" class="is-flex"><div class="is-inline-flex">No recent updates</div>
+                </div></div></section></div></div></a>
+</div>
+        </div><div class="column is-4-desktop is-4-tablet is-6-mobile"><div class="perspective svelte-rk0oyd"><a role="button" class="image-card svelte-rk0oyd" sveltekit:prefetch href="https://www.duellinksmeta.com/guides/"><div class="card-inner svelte-rk0oyd"><div class="top-right-info svelte-rk0oyd"></div>
+            <div style="--ratio: 0.54;" class="svelte-16h7w79"><img class="image-cover svelte-rk0oyd" alt="Guides" srcset="https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/new-players.jpg&amp;w=80&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 80w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/new-players.jpg&amp;w=120&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 120w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/new-players.jpg&amp;w=240&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 240w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/new-players.jpg&amp;w=360&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 360w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/new-players.jpg&amp;w=520&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 520w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/new-players.jpg&amp;w=640&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 640w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/new-players.jpg&amp;w=800&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 800w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/new-players.jpg&amp;w=1000&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1000w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/new-players.jpg&amp;w=1200&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1200w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/front-page/new-players.jpg&amp;w=1400&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1400w" sizes="(min-width: 1080px) 356px, (min-width: 576px) 33vw, (max-width: 575px) 50vw"></div>
+
+
+            
+            <div class="information svelte-rk0oyd"><section class="full-width"><p class="title svelte-rk0oyd is-uppercase">Guides</p>
+                    <div class="sub-text full-width svelte-rk0oyd"><div slot="info" class="is-flex"><div class="is-inline-flex">No recent updates</div>
+                </div></div></section></div></div></a>
+</div>
+        </div></div>
+
+<div class="columns mb-2 is-1-mobile is-1 is-variable is-mobile is-multiline svelte-b7s08f"><div class="column is-is-one-third-mobile is-one-fifth-tablet is-one-fifth-desktop"><a sveltekit:prefetch href="https://www.duellinksmeta.com/gem-guide/" class="svelte-b7s08f"><div class="is-clickable is-flex is-justify-content-center is-align-items-center has-text-centered line-height-1 px-2 svelte-curehn is-uppercase" style="--height: 2.4em;">Gem Guide
+    
+</div>
+                </a>
+        </div><div class="column is-is-one-third-mobile is-one-fifth-tablet is-one-fifth-desktop"><a sveltekit:prefetch href="https://www.duellinksmeta.com/deck-tester/" class="svelte-b7s08f"><div class="is-clickable is-flex is-justify-content-center is-align-items-center has-text-centered line-height-1 px-2 svelte-curehn is-uppercase" style="--height: 2.4em;">Deck Builder
+    
+</div>
+                </a>
+        </div><div class="column is-is-one-third-mobile is-one-fifth-tablet is-one-fifth-desktop"><a sveltekit:prefetch href="https://www.duellinksmeta.com/tournaments/" class="svelte-b7s08f"><div class="is-clickable is-flex is-justify-content-center is-align-items-center has-text-centered line-height-1 px-2 svelte-curehn is-uppercase" style="--height: 2.4em;">Tournaments
+    
+</div>
+                </a>
+        </div><div class="column is-6-mobile is-one-fifth-tablet is-one-fifth-desktop"><a sveltekit:prefetch href="https://www.duellinksmeta.com/pack-opening-simulator/" class="svelte-b7s08f"><div class="is-clickable is-flex is-justify-content-center is-align-items-center has-text-centered line-height-1 px-2 svelte-curehn is-uppercase" style="--height: 2.4em;">Pack Opener
+    
+</div>
+                </a>
+        </div><div class="column is-6-mobile is-one-fifth-tablet is-one-fifth-desktop"><a sveltekit:prefetch href="https://www.duellinksmeta.com/shop/" class="svelte-b7s08f"><div class="is-clickable is-flex is-justify-content-center is-align-items-center has-text-centered line-height-1 px-2 svelte-curehn is-uppercase" style="--height: 2.4em;">Shop
+    
+</div>
+                </a>
+        </div>
+    </div>
+
+
+
+<ul class="svelte-dmz3pp"><li class="svelte-dmz3pp"><a href="https://www.duellinksmeta.com/articles/quick-news/september-2026/fortune-telling-campaign/" class="svelte-dmz3pp"><div class="item-wrapper is-flex is-align-items-center svelte-dmz3pp"><span class="date svelte-dmz3pp">[ September 14th, 2026 ]</span>
+                        <span class="title mx-1 svelte-dmz3pp">Carly&#39;s Fortune Telling</span>
+                        <div class="info-section is-flex is-align-items-center svelte-dmz3pp"><span class="description ellipsis-text svelte-dmz3pp">A New Carly&#39;s Fortune Telling is Upon Us!</span>
+                                <span class="ml-2">
+
+<div><span class=" svelte-1kg7ic5"><div class="countdown-timer is-flex is-align-items-center is-justify-content-center is-family-monospace line-height-1 svelte-47azb9 small"><div class="clock is-unselectable is-flex is-justify-content-space-between is-align-items-center svelte-47azb9"><span class="icon-container svelte-47azb9"><svg id="" class="svelte-fa svelte-xj8byo" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 384 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(192 256)" transform-origin="96 0"><g transform="translate(0,0) scale(1,1)"><path d="M360 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24 0 90.965 51.016 167.734 120.842 192C75.016 280.266 24 357.035 24 448c-13.255 0-24 10.745-24 24v16c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24 0-90.965-51.016-167.734-120.842-192C308.984 231.734 360 154.965 360 64c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24zm-64 448H88c0-77.458 46.204-144 104-144 57.786 0 104 66.517 104 144z" fill="currentColor" transform="translate(-192 -256)"></path></g></g></svg></span>
+                        <div class="timer is-flex is-justify-content-space-between is-align-items-flex-end"><span class="svelte-47azb9">Loading...</span></div></div></div>
+</span></div>
+
+
+                                    </span>
+                            </div>
+                    </div></a>
+            </li><li class="svelte-dmz3pp"><a href="https://www.duellinksmeta.com/articles/quick-news/august-2026/wcs-champion-campaign/" class="svelte-dmz3pp"><div class="item-wrapper is-flex is-align-items-center svelte-dmz3pp"><span class="date svelte-dmz3pp">[ August 31st, 2026 ]</span>
+                        <span class="title mx-1 svelte-dmz3pp">WCS 2026 Champion Celebration Campaign</span>
+                        <div class="info-section is-flex is-align-items-center svelte-dmz3pp"><span class="description ellipsis-text svelte-dmz3pp">Free new box Pack Tickets, Chronicle Chips &amp; Accessories !</span>
+                                <span class="ml-2">
+
+<div><span class=" svelte-1kg7ic5"><div class="countdown-timer is-flex is-align-items-center is-justify-content-center is-family-monospace line-height-1 svelte-47azb9 small"><div class="clock is-unselectable is-flex is-justify-content-space-between is-align-items-center svelte-47azb9"><span class="icon-container svelte-47azb9"><svg id="" class="svelte-fa svelte-xj8byo" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 384 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(192 256)" transform-origin="96 0"><g transform="translate(0,0) scale(1,1)"><path d="M360 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24 0 90.965 51.016 167.734 120.842 192C75.016 280.266 24 357.035 24 448c-13.255 0-24 10.745-24 24v16c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24 0-90.965-51.016-167.734-120.842-192C308.984 231.734 360 154.965 360 64c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24zm-64 448H88c0-77.458 46.204-144 104-144 57.786 0 104 66.517 104 144z" fill="currentColor" transform="translate(-192 -256)"></path></g></g></svg></span>
+                        <div class="timer is-flex is-justify-content-space-between is-align-items-flex-end"><span class="svelte-47azb9">Loading...</span></div></div></div>
+</span></div>
+
+
+                                    </span>
+                            </div>
+                    </div></a>
+            </li><li class="svelte-dmz3pp"><a href="https://www.duellinksmeta.com/articles/quick-news/2026/august/3500-days-campaign/" class="svelte-dmz3pp"><div class="item-wrapper is-flex is-align-items-center svelte-dmz3pp"><span class="date svelte-dmz3pp">[ August 12th, 2026 ]</span>
+                        <span class="title mx-1 svelte-dmz3pp">3,500 Days Since Launch Campaign</span>
+                        <div class="info-section is-flex is-align-items-center svelte-dmz3pp"><span class="description ellipsis-text svelte-dmz3pp">Free UR Dream Tickets, Gems and a new Bingo Sheet!</span>
+                                <span class="ml-2">
+
+<div><span class=" svelte-1kg7ic5"><div class="countdown-timer is-flex is-align-items-center is-justify-content-center is-family-monospace line-height-1 svelte-47azb9 small"><div class="clock is-unselectable is-flex is-justify-content-space-between is-align-items-center svelte-47azb9"><span class="icon-container svelte-47azb9"><svg id="" class="svelte-fa svelte-xj8byo" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 384 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(192 256)" transform-origin="96 0"><g transform="translate(0,0) scale(1,1)"><path d="M360 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24 0 90.965 51.016 167.734 120.842 192C75.016 280.266 24 357.035 24 448c-13.255 0-24 10.745-24 24v16c0 13.255 10.745 24 24 24h336c13.255 0 24-10.745 24-24v-16c0-13.255-10.745-24-24-24 0-90.965-51.016-167.734-120.842-192C308.984 231.734 360 154.965 360 64c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24zm-64 448H88c0-77.458 46.204-144 104-144 57.786 0 104 66.517 104 144z" fill="currentColor" transform="translate(-192 -256)"></path></g></g></svg></span>
+                        <div class="timer is-flex is-justify-content-space-between is-align-items-flex-end"><span class="svelte-47azb9">Loading...</span></div></div></div>
+</span></div>
+
+
+                                    </span>
+                            </div>
+                    </div></a>
+            </li></ul>
+
+<div class="article-list columns is-2-tablet is-1-mobile is-variable is-mobile is-multiline mb-0"><div class="column is-6-desktop is-6-tablet is-12-mobile"><div class="perspective svelte-rk0oyd"><a role="button" class="image-card svelte-rk0oyd" sveltekit:prefetch href="https://www.duellinksmeta.com/articles/tournaments/starry-cup/184/report/"><div class="card-inner svelte-rk0oyd"><div class="top-right-info svelte-rk0oyd">
+        </div>
+            <div style="--ratio: 0.351;" class="svelte-16h7w79"><img class="image-cover svelte-rk0oyd" alt="Starry Cup #184 &amp; 185" srcset="https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/starry-cup/thumb.webp&amp;w=80&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 80w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/starry-cup/thumb.webp&amp;w=120&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 120w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/starry-cup/thumb.webp&amp;w=240&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 240w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/starry-cup/thumb.webp&amp;w=360&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 360w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/starry-cup/thumb.webp&amp;w=520&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 520w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/starry-cup/thumb.webp&amp;w=640&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 640w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/starry-cup/thumb.webp&amp;w=800&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 800w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/starry-cup/thumb.webp&amp;w=1000&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1000w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/starry-cup/thumb.webp&amp;w=1200&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1200w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/starry-cup/thumb.webp&amp;w=1400&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1400w" sizes="(min-width: 1080px) 540px, (min-width: 576px) 50vw, (max-width: 575px) 100vw"></div>
+
+
+            <div class="ribbon tournament is-flex is-align-items-center svelte-1h9rb1w"><span class="ribbon-text">Tournament</span></div>
+                
+            <div class="information svelte-rk0oyd"><section class="full-width"><p class="title svelte-rk0oyd is-uppercase">Starry Cup #184 &amp; 185</p>
+                    <div class="sub-text full-width svelte-rk0oyd"><span slot="info">Updated <b>September 17th, 2026</b>
+                by
+                <span class="is-inline-flex is-align-items-center"><span sveltekit:prefetch class="has-text-weight-bold username-text svelte-1y131ia" style="color: #00B115"><span class=" svelte-1kg7ic5"><span class="notranslate">RandomPl0x</span>
+</span></span></span>
+                        </span></div></section></div></div></a>
+</div>
+        </div><div class="column is-6-desktop is-6-tablet is-12-mobile"><div class="perspective svelte-rk0oyd"><a role="button" class="image-card svelte-rk0oyd" sveltekit:prefetch href="https://www.duellinksmeta.com/articles/news/sept-16-2026/campaign-early/"><div class="card-inner svelte-rk0oyd"><div class="top-right-info svelte-rk0oyd">
+        </div>
+            <div style="--ratio: 0.351;" class="svelte-16h7w79"><img class="image-cover svelte-rk0oyd" alt="Konami Accidentally Reveals Upcoming Duel Links Campaign" srcset="https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/news/2026/9/DMOD.webp&amp;w=80&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 80w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/news/2026/9/DMOD.webp&amp;w=120&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 120w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/news/2026/9/DMOD.webp&amp;w=240&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 240w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/news/2026/9/DMOD.webp&amp;w=360&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 360w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/news/2026/9/DMOD.webp&amp;w=520&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 520w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/news/2026/9/DMOD.webp&amp;w=640&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 640w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/news/2026/9/DMOD.webp&amp;w=800&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 800w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/news/2026/9/DMOD.webp&amp;w=1000&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1000w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/news/2026/9/DMOD.webp&amp;w=1200&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1200w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/news/2026/9/DMOD.webp&amp;w=1400&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1400w" sizes="(min-width: 1080px) 540px, (min-width: 576px) 50vw, (max-width: 575px) 100vw"></div>
+
+
+            <div class="ribbon news is-flex is-align-items-center svelte-1h9rb1w"><span class="ribbon-text">News</span></div>
+                
+            <div class="information svelte-rk0oyd"><section class="full-width"><p class="title svelte-rk0oyd is-uppercase">Konami Accidentally Reveals Upcoming Duel Links Campaign</p>
+                    <div class="sub-text full-width svelte-rk0oyd"><span slot="info">Updated <b>September 16th, 2026</b>
+                by
+                <span class="is-inline-flex is-align-items-center"><span sveltekit:prefetch class="has-text-weight-bold username-text svelte-1y131ia" style="color: #00B115"><span class=" svelte-1kg7ic5"><span class="notranslate">ItsBradazHD</span>
+</span></span></span>
+                        </span></div></section></div></div></a>
+</div>
+        </div><div class="column is-6-desktop is-6-tablet is-12-mobile"><div class="perspective svelte-rk0oyd"><a role="button" class="image-card svelte-rk0oyd" sveltekit:prefetch href="https://www.duellinksmeta.com/articles/tournaments/quantum-dailies/567/report/"><div class="card-inner svelte-rk0oyd"><div class="top-right-info svelte-rk0oyd">
+        </div>
+            <div style="--ratio: 0.351;" class="svelte-16h7w79"><img class="image-cover svelte-rk0oyd" alt="Quantum Dailies #567" srcset="https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/quantum-cup/thumb.jpg&amp;w=80&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 80w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/quantum-cup/thumb.jpg&amp;w=120&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 120w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/quantum-cup/thumb.jpg&amp;w=240&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 240w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/quantum-cup/thumb.jpg&amp;w=360&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 360w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/quantum-cup/thumb.jpg&amp;w=520&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 520w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/quantum-cup/thumb.jpg&amp;w=640&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 640w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/quantum-cup/thumb.jpg&amp;w=800&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 800w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/quantum-cup/thumb.jpg&amp;w=1000&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1000w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/quantum-cup/thumb.jpg&amp;w=1200&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1200w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/quantum-cup/thumb.jpg&amp;w=1400&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1400w" sizes="(min-width: 1080px) 540px, (min-width: 576px) 50vw, (max-width: 575px) 100vw"></div>
+
+
+            <div class="ribbon tournament is-flex is-align-items-center svelte-1h9rb1w"><span class="ribbon-text">Tournament</span></div>
+                
+            <div class="information svelte-rk0oyd"><section class="full-width"><p class="title svelte-rk0oyd is-uppercase">Quantum Dailies #567</p>
+                    <div class="sub-text full-width svelte-rk0oyd"><span slot="info">Published <b>September 16th, 2026</b>
+                by
+                <span class="is-inline-flex is-align-items-center"><span sveltekit:prefetch class="has-text-weight-bold username-text svelte-1y131ia" style="color: #00B115"><span class=" svelte-1kg7ic5"><span class="notranslate">RandomPl0x</span>
+</span></span></span>
+                        </span></div></section></div></div></a>
+</div>
+        </div><div class="column is-6-desktop is-6-tablet is-12-mobile"><div class="perspective svelte-rk0oyd"><a role="button" class="image-card svelte-rk0oyd" sveltekit:prefetch href="https://www.duellinksmeta.com/articles/tournaments/meta-weekly/442/report/"><div class="card-inner svelte-rk0oyd"><div class="top-right-info svelte-rk0oyd">
+        </div>
+            <div style="--ratio: 0.351;" class="svelte-16h7w79"><img class="image-cover svelte-rk0oyd" alt="Meta Weekly #442" srcset="https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/meta-weekly/dlm-mw.webp&amp;w=80&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 80w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/meta-weekly/dlm-mw.webp&amp;w=120&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 120w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/meta-weekly/dlm-mw.webp&amp;w=240&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 240w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/meta-weekly/dlm-mw.webp&amp;w=360&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 360w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/meta-weekly/dlm-mw.webp&amp;w=520&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 520w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/meta-weekly/dlm-mw.webp&amp;w=640&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 640w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/meta-weekly/dlm-mw.webp&amp;w=800&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 800w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/meta-weekly/dlm-mw.webp&amp;w=1000&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1000w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/meta-weekly/dlm-mw.webp&amp;w=1200&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1200w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tournaments/meta-weekly/dlm-mw.webp&amp;w=1400&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1400w" sizes="(min-width: 1080px) 540px, (min-width: 576px) 50vw, (max-width: 575px) 100vw"></div>
+
+
+            <div class="ribbon tournament is-flex is-align-items-center svelte-1h9rb1w"><span class="ribbon-text">Tournament</span></div>
+                
+            <div class="information svelte-rk0oyd"><section class="full-width"><p class="title svelte-rk0oyd is-uppercase">Meta Weekly #442</p>
+                    <div class="sub-text full-width svelte-rk0oyd"><span slot="info">Published <b>September 14th, 2026</b>
+                by
+                <span class="is-inline-flex is-align-items-center"><span sveltekit:prefetch class="has-text-weight-bold username-text svelte-1y131ia" style="color: #00B115"><span class=" svelte-1kg7ic5"><span class="notranslate">RandomPl0x</span>
+</span></span></span>
+                        </span></div></section></div></div></a>
+</div>
+        </div><div class="column is-6-desktop is-6-tablet is-12-mobile"><div class="perspective svelte-rk0oyd"><a role="button" class="image-card svelte-rk0oyd" sveltekit:prefetch href="https://www.duellinksmeta.com/articles/competitive/tournament-analysis/2026/september/3/"><div class="card-inner svelte-rk0oyd"><div class="top-right-info svelte-rk0oyd">
+        </div>
+            <div style="--ratio: 0.351;" class="svelte-16h7w79"><img class="image-cover svelte-rk0oyd" alt="Duel Links Meta Snapshot: September 2026 - Week #3" srcset="https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/competitive-articles/bismut-meta-snapshot/2026/snapaug1.webp&amp;w=80&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 80w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/competitive-articles/bismut-meta-snapshot/2026/snapaug1.webp&amp;w=120&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 120w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/competitive-articles/bismut-meta-snapshot/2026/snapaug1.webp&amp;w=240&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 240w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/competitive-articles/bismut-meta-snapshot/2026/snapaug1.webp&amp;w=360&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 360w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/competitive-articles/bismut-meta-snapshot/2026/snapaug1.webp&amp;w=520&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 520w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/competitive-articles/bismut-meta-snapshot/2026/snapaug1.webp&amp;w=640&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 640w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/competitive-articles/bismut-meta-snapshot/2026/snapaug1.webp&amp;w=800&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 800w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/competitive-articles/bismut-meta-snapshot/2026/snapaug1.webp&amp;w=1000&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1000w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/competitive-articles/bismut-meta-snapshot/2026/snapaug1.webp&amp;w=1200&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1200w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/competitive-articles/bismut-meta-snapshot/2026/snapaug1.webp&amp;w=1400&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1400w" sizes="(min-width: 1080px) 540px, (min-width: 576px) 50vw, (max-width: 575px) 100vw"></div>
+
+
+            <div class="ribbon competitive is-flex is-align-items-center svelte-1h9rb1w"><span class="ribbon-text">Competitive</span></div>
+                
+            <div class="information svelte-rk0oyd"><section class="full-width"><p class="title svelte-rk0oyd is-uppercase">Duel Links Meta Snapshot: September 2026 - Week #3</p>
+                    <div class="sub-text full-width svelte-rk0oyd"><span slot="info">Published <b>September 14th, 2026</b>
+                by
+                <span class="is-inline-flex is-align-items-center"><span sveltekit:prefetch class="has-text-weight-bold username-text svelte-1y131ia"><span class=" svelte-1kg7ic5"><span class="notranslate">Bismut</span>
+</span></span></span>
+                        </span></div></section></div></div></a>
+</div>
+        </div><div class="column is-6-desktop is-6-tablet is-12-mobile"><div class="perspective svelte-rk0oyd"><a role="button" class="image-card svelte-rk0oyd" sveltekit:prefetch href="https://www.duellinksmeta.com/articles/tier-list/updates/2026/september-14/"><div class="card-inner svelte-rk0oyd"><div class="top-right-info svelte-rk0oyd">
+        </div>
+            <div style="--ratio: 0.351;" class="svelte-16h7w79"><img class="image-cover svelte-rk0oyd" alt="KCC Tier List Update" srcset="https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tier-list/updates/2026/2026-08-10-update.webp&amp;w=80&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 80w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tier-list/updates/2026/2026-08-10-update.webp&amp;w=120&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 120w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tier-list/updates/2026/2026-08-10-update.webp&amp;w=240&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 240w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tier-list/updates/2026/2026-08-10-update.webp&amp;w=360&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 360w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tier-list/updates/2026/2026-08-10-update.webp&amp;w=520&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 520w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tier-list/updates/2026/2026-08-10-update.webp&amp;w=640&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 640w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tier-list/updates/2026/2026-08-10-update.webp&amp;w=800&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 800w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tier-list/updates/2026/2026-08-10-update.webp&amp;w=1000&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1000w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tier-list/updates/2026/2026-08-10-update.webp&amp;w=1200&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1200w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/content/tier-list/updates/2026/2026-08-10-update.webp&amp;w=1400&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1400w" sizes="(min-width: 1080px) 540px, (min-width: 576px) 50vw, (max-width: 575px) 100vw"></div>
+
+
+            <div class="ribbon tier-list is-flex is-align-items-center svelte-1h9rb1w"><span class="ribbon-text">Tier List Update</span></div>
+                
+            <div class="information svelte-rk0oyd"><section class="full-width"><p class="title svelte-rk0oyd is-uppercase">KCC Tier List Update</p>
+                    <div class="sub-text full-width svelte-rk0oyd"><span slot="info">Published <b>September 14th, 2026</b>
+                by
+                <span class="is-inline-flex is-align-items-center"><span sveltekit:prefetch class="has-text-weight-bold username-text svelte-1y131ia" style="color: #00B115"><span class=" svelte-1kg7ic5"><span class="notranslate">Playmaker EY</span>
+</span></span></span>
+                        </span></div></section></div></div></a>
+</div>
+        </div><div class="column is-6-desktop is-6-tablet is-12-mobile"><div class="perspective svelte-rk0oyd"><a role="button" class="image-card svelte-rk0oyd" sveltekit:prefetch href="https://www.duellinksmeta.com/articles/tournaments/pro-arab-tournament/16/report/"><div class="card-inner svelte-rk0oyd"><div class="top-right-info svelte-rk0oyd">
+        </div>
+            <div style="--ratio: 0.351;" class="svelte-16h7w79"><img class="image-cover svelte-rk0oyd" alt="Pro Arab Tournament #16" srcset="https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/arab-pro-tournament/arab-thumb.webp&amp;w=80&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 80w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/arab-pro-tournament/arab-thumb.webp&amp;w=120&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 120w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/arab-pro-tournament/arab-thumb.webp&amp;w=240&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 240w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/arab-pro-tournament/arab-thumb.webp&amp;w=360&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 360w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/arab-pro-tournament/arab-thumb.webp&amp;w=520&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 520w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/arab-pro-tournament/arab-thumb.webp&amp;w=640&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 640w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/arab-pro-tournament/arab-thumb.webp&amp;w=800&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 800w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/arab-pro-tournament/arab-thumb.webp&amp;w=1000&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1000w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/arab-pro-tournament/arab-thumb.webp&amp;w=1200&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1200w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/tournaments/arab-pro-tournament/arab-thumb.webp&amp;w=1400&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1400w" sizes="(min-width: 1080px) 540px, (min-width: 576px) 50vw, (max-width: 575px) 100vw"></div>
+
+
+            <div class="ribbon tournament is-flex is-align-items-center svelte-1h9rb1w"><span class="ribbon-text">Tournament</span></div>
+                
+            <div class="information svelte-rk0oyd"><section class="full-width"><p class="title svelte-rk0oyd is-uppercase">Pro Arab Tournament #16</p>
+                    <div class="sub-text full-width svelte-rk0oyd"><span slot="info">Updated <b>September 14th, 2026</b>
+                by
+                <span class="is-inline-flex is-align-items-center"><span sveltekit:prefetch class="has-text-weight-bold username-text svelte-1y131ia" style="color: #00B115"><span class=" svelte-1kg7ic5"><span class="notranslate">RandomPl0x</span>
+</span></span></span>
+                        </span></div></section></div></div></a>
+</div>
+        </div><div class="column is-6-desktop is-6-tablet is-12-mobile"><div class="perspective svelte-rk0oyd"><a role="button" class="image-card svelte-rk0oyd" sveltekit:prefetch href="https://www.duellinksmeta.com/articles/meme-reviews/september-13-2026/"><div class="card-inner svelte-rk0oyd"><div class="top-right-info svelte-rk0oyd">
+        </div>
+            <div style="--ratio: 0.351;" class="svelte-16h7w79"><img class="image-cover svelte-rk0oyd" alt="DLM Meme Review #270" srcset="https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/meme-review/thumb.jpg&amp;w=80&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 80w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/meme-review/thumb.jpg&amp;w=120&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 120w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/meme-review/thumb.jpg&amp;w=240&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 240w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/meme-review/thumb.jpg&amp;w=360&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 360w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/meme-review/thumb.jpg&amp;w=520&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 520w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/meme-review/thumb.jpg&amp;w=640&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 640w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/meme-review/thumb.jpg&amp;w=800&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 800w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/meme-review/thumb.jpg&amp;w=1000&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1000w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/meme-review/thumb.jpg&amp;w=1200&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1200w, https://wsrv.nl/?url=https://s3.duellinksmeta.com/img/legacy-articles/content/meme-review/thumb.jpg&amp;w=1400&amp;output=webp&amp;we&amp;n=-1&amp;maxage=7d 1400w" sizes="(min-width: 1080px) 540px, (min-width: 576px) 50vw, (max-width: 575px) 100vw"></div>
+
+
+            <div class="ribbon memes is-flex is-align-items-center svelte-1h9rb1w"><span class="ribbon-text">Meme Review</span></div>
+                
+            <div class="information svelte-rk0oyd"><section class="full-width"><p class="title svelte-rk0oyd is-uppercase">DLM Meme Review #270</p>
+                    <div class="sub-text full-width svelte-rk0oyd"><span slot="info">Published <b>September 13th, 2026</b>
+                by
+                <span class="is-inline-flex is-align-items-center"><span sveltekit:prefetch class="has-text-weight-bold username-text svelte-1y131ia" style="color: #00B115"><span class=" svelte-1kg7ic5"><span class="notranslate">RandomPl0x</span>
+</span></span></span>
+                        </span></div></section></div></div></a>
+</div>
+        </div></div>
+
+
+        <div class="ad-slot svelte-5xbe0x large-ad-container"><div></div></div></div>
+    <footer class="my-4 is-flex is-flex-direction-column is-flex-wrap-nowrap is-align-items-center svelte-10p8uxt"><div class="banner mt-2 mb-4 svelte-10p8uxt"></div>
+    
+    <div class="is-flex has-text-centered mt-3 mb-2"><div class="link-container svelte-10p8uxt"><div><a class="is-flex is-justify-content-center is-align-items-center is-clickable p-1 social-link twitch-link svelte-xrnact" target="_blank" rel="noopener" href="https://www.twitch.tv/dkayed"><svg id="" class="svelte-fa svelte-xj8byo" style="height:1em;line-height:.75em;font-size:1.33333em;vertical-align:-.225em;transform-origin:center;overflow:visible" viewBox="0 0 512 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(256 256)" transform-origin="128 0"><g transform="translate(0,0) scale(1,1)"><path d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z" fill="currentColor" transform="translate(-256 -256)"></path></g></g></svg></a>
+</div></div>
+        
+        <div class="link-container svelte-10p8uxt"><div><a class="is-flex is-justify-content-center is-align-items-center is-clickable p-1 social-link youtube-link svelte-xrnact" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCz_cNcJzCy4asffzW5ERH1w"><svg id="" class="svelte-fa svelte-xj8byo" style="height:1em;line-height:.75em;font-size:1.33333em;vertical-align:-.225em;transform-origin:center;overflow:visible" viewBox="0 0 576 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(288 256)" transform-origin="144 0"><g transform="translate(0,0) scale(1,1)"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" fill="currentColor" transform="translate(-288 -256)"></path></g></g></svg></a>
+</div></div>
+        <div class="link-container svelte-10p8uxt"><div><a class="is-flex is-justify-content-center is-align-items-center is-clickable p-1 social-link twitter-link svelte-xrnact" target="_blank" rel="noopener" href="https://twitter.com/duellinksmeta"><svg id="" class="svelte-fa svelte-xj8byo" style="height:1em;line-height:.75em;font-size:1.33333em;vertical-align:-.225em;transform-origin:center;overflow:visible" viewBox="0 0 512 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(256 256)" transform-origin="128 0"><g transform="translate(0,0) scale(1,1)"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" fill="currentColor" transform="translate(-256 -256)"></path></g></g></svg></a>
+</div></div></div>
+    <span class="copyright svelte-10p8uxt">© 2018-2026 Duel Links Meta LLC</span>
+    
+    <span class="req-links is-flex is-justify-content-space-between is-align-items-center svelte-10p8uxt"><a href="https://www.duellinksmeta.com/terms-of-service/" class="svelte-10p8uxt">Terms of Service</a>
+        <span class="separator svelte-10p8uxt"></span>
+        <a href="https://www.duellinksmeta.com/contact/" class="svelte-10p8uxt">Contact</a>
+        <span class="separator svelte-10p8uxt"></span>
+        <a href="https://status.duelmetacorp.com/" class="svelte-10p8uxt">Server Status</a></span>
+    <div class="full-width"></div></footer></main>
+
+
+
+<div style="--animate-dur: 0.3s" class="modal svelte-16y90ib  top"><div class="modal-background svelte-16y90ib animated"></div>
+    <div class="modal-content svelte-16y90ib animated"><span class="modal-close-button svelte-16y90ib"><svg id="" class="svelte-fa svelte-xj8byo" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 352 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(176 256)" transform-origin="88 0"><g transform="translate(0,0) scale(1,1)"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" fill="currentColor" transform="translate(-176 -256)"></path></g></g></svg></span>
+        <div class="dlm-modal search-modal is-flex is-flex-direction-column px-2 pt-1 pb-0 mb-1"><div class="tabbed-container svelte-umfxo"><div><ul class="svelte-umfxo"><li class="svelte-umfxo active">Cards
+                    
+                </li><li class="svelte-umfxo">Skills
+                    
+                </li><li class="svelte-umfxo">Articles
+                    
+                </li><li class="svelte-umfxo">Other
+                    
+                </li>
+            <li class="svelte-umfxo"></li>
+            <li class="filler full-width svelte-umfxo"></li></ul></div>
+    <div class="mt-4 tab-content svelte-5no1h4 active"><div class="bubble-container is-flex is-justify-content-center is-align-items-center svelte-17gsder py-3"><div class="spinner is-flex is-justify-content-space-between is-align-items-center svelte-17gsder"><div class="bounce1 svelte-17gsder"></div>
+        <div class="bounce2 svelte-17gsder"></div>
+        <div class="bounce3 svelte-17gsder"></div></div>
+</div></div>
+            <div class="mt-4 tab-content svelte-5no1h4"></div>
+            <div class="mt-4 tab-content svelte-5no1h4"></div>
+            <div class="mt-4 tab-content svelte-5no1h4"></div></div></div></div></div>
+
+
+
+
+		<script type="module" data-sveltekit-hydrate="ni02ct">
+		import { start } from "/_app/immutable/start-c9241024.js";
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="ni02ct"]').parentNode,
+			paths: {"base":"","assets":""},
+			session: (function(a){return {uaInfo:{device:{vendor:a,model:a,type:a},os:{name:a,version:a},clientBrowser:{name:a,version:a,major:a},isImageServ:false},isJapanese:a}}(void 0)),
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 23],
+				params: {},
+				routeId: ""
+			}
+		});
+	</script></div>
+</body>
+
+</html>

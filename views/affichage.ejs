@@ -1,0 +1,33 @@
+<%- include('header') %>
+    <h1>Affichage : </h1>
+    <div class="ui main container">
+        <ul>
+            <% YU_GI_OH.forEach(function(carte){ %>
+                <li>
+                    <a href="http://localhost:8000/YU_GI_OH/<%= carte.id %>"><img src="<%= carte.image %>"
+                            alt="<%= carte.nom %>" style="width: 100px; height: auto;"></a>
+                    
+                    <a href="http://localhost:8000/YU_GI_OH/update/<%=carte.id%>" >&#9998;</a>        
+                    <a href="http://localhost:8000/YU_GI_OH/delete/<%=carte.id%>" >&#10006;</a>
+
+                    <br>
+                    <strong>
+                        <%= carte.nom %>
+                    </strong>
+                    <br>
+
+                    <%= carte.type %> ->
+                        <%= carte.attribut %> ->
+                            Niveau : <%= carte.niveau %> ->
+                                ATK : <%= carte.atk %> ->
+                                    DEF : <%= carte.def %>
+                                        <br>
+
+                                        <%= carte.description %>
+
+                </li>
+
+                <% }) %>
+        </ul>
+    </div>
+    <%- include('footer') %>

@@ -1,0 +1,42 @@
+<%- include('header') %>
+<div class="ui main container">
+<form action="/YU_GI_OH/" method="POST" enctype="application/x-www-form-urlencoded" class="ui
+form">
+<div class="field">
+
+<input type="hidden" name="id" value="<%= carte ? carte.id : '' %>">
+
+<label for="nom">Nom : </label>
+<input type="text" name="nom" value="<%= carte ? carte.nom : '' %>">
+
+<label for="type">Type : </label>
+<input type="text" name="type" value="<%= carte ? carte.type : '' %>">
+
+<label for="attribut">Attribut : </label>
+<input type="text" name="attribut" value="<%= carte ? carte.attribut : '' %>">
+
+<label for="niveau">Niveau : </label>
+<input type="number" name="niveau" value="<%= carte ? carte.niveau : '' %>">
+
+<label for="atk">Atk : </label>
+<input type="number" name="atk" value="<%= carte ? carte.atk : '' %>">
+
+<label for="def">Def : </label>
+<input type="number" name="def" value="<%= carte ? carte.def : '' %>">
+
+<label for="description">Description : </label>
+<textarea name="description"><%= carte ? carte.description : '' %></textarea>
+
+<label for="image">Image : </label>
+<input type="text" name="image" value="<%= carte ? carte.image : '' %>">
+
+</div>
+<button type="submit" class="ui blue animated submit large button">
+<div class="visible content">Envoyer</div>
+<div class="hidden content">
+<i class="right arrow icon"></i>
+</div>
+</button>
+</form>
+</div>
+<%- include('footer') %>
